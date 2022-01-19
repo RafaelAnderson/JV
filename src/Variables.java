@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Variables {
     public static void main(String[] args) {
-        String saludar = "Hola ";
+        String saludar = "Hola";
         System.out.println(saludar);
         System.out.println("saludar.toUpperCase() = " + saludar.toUpperCase());
         
@@ -16,5 +16,17 @@ public class Variables {
         }
         var numero3 = "20";
         System.out.println("numero3 = " + numero3);
+
+        //
+
+        String nombre;
+        nombre = "Rafael";
+
+        if(numero > 5){
+            nombre = "Anderson";
+        }
+        System.out.println(nombre);
+
+        int edadPersona = 25;
     }
 }
