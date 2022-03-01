@@ -29,5 +29,20 @@ public class ConversionDeTipos {
 
         otroRealStr = String.valueOf(1.23456e2f);
         System.out.println("otroRealStr = " + otroRealStr);
+
+        /*** Conversiones entre tipos primitivos ***/
+        int i = 10000;
+        short s = (short) i; // Forzar conversión
+        System.out.println("s = " + s);
+        
+        long l = i;
+        System.out.println("l = " + l);
+        System.out.println(Short.MAX_VALUE); // Máximo valor soportado por una variable short
+        
+        char b = (char) i;
+        System.out.println("b = " + b);
+        
+        float f = (float) i;
+        System.out.println("f = " + f);
     }
 }
