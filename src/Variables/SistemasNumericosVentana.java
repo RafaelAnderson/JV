@@ -1,3 +1,5 @@
+package Variables;
+
 import javax.swing.*;
 
 public class SistemasNumericosVentana {

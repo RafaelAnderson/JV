@@ -1,3 +1,5 @@
+package Variables;
+
 public class PrimitivoNumero {
     /***** Enteros *****/
     // entre -128 a 127

@@ -1,3 +1,5 @@
+package Variables;
+
 import java.util.Arrays;
 
 public class PrimitivosFloat {

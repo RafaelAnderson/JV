@@ -1,3 +1,5 @@
+package Variables;
+
 public class PrimitivoChar {
     char a = 'a';
     char b = '1';
