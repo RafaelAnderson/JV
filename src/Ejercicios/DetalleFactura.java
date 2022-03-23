@@ -1,4 +1,4 @@
-package Factura;
+package Ejercicios;
 
 import java.util.Scanner;
 
