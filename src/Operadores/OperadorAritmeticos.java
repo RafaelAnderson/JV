@@ -2,7 +2,7 @@ package Operadores;
 
 import javax.swing.*;
 
-public class OperadorAritmetico {
+public class OperadorAritmeticos {
 
     public static void main(String[] args) {
 
