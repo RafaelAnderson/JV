@@ -6,17 +6,19 @@ public class OperadoresLogicosLogin {
 
     public static void main(String[] args) {
 
-        /* String[] usernames = new String[2];
-        String[] passwords = new String[2];
+        /*
+         * String[] usernames = new String[2];
+         * String[] passwords = new String[2];
+         * 
+         * usernames[0] = "Rafael";
+         * passwords[0] = "123456";
+         * 
+         * usernames[1] = "admin";
+         * passwords[1] = "123456";
+         */
 
-        usernames[0] = "Rafael";
-        passwords[0] = "123456";
-
-        usernames[1] = "admin";
-        passwords[1] = "123456";*/
-
-        String[] usernames = {"Rafael", "admin", "Anderson"};
-        String[] passwords = {"123456", "123456", "123456"};
+        String[] usernames = { "Rafael", "admin", "Anderson" };
+        String[] passwords = { "123456", "123456", "123456" };
 
         Scanner scanner = new Scanner(System.in);
 
@@ -29,17 +31,29 @@ public class OperadoresLogicosLogin {
         boolean isAuthenticate = false;
 
         for (int i = 0; i < usernames.length; i++) {
-            if (usernames[i].equals(u) && passwords[i].equals(p)) {
-                isAuthenticate = true;
-                break;
-            }
+            /*
+             * if (usernames[i].equals(u) && passwords[i].equals(p)) {
+             * isAuthenticate = true;
+             * break; // sale del for
+             * }
+             */
+
+            // Usando ternario
+            isAuthenticate = (usernames[i].equals(u) && passwords[i].equals(p)) ? true : isAuthenticate;
         }
 
-        if (isAuthenticate) {
-            System.out.println("Bienvenido usuario ".concat(u).concat("!"));
-        } else {
-            System.out.println("Username o contraseña incorrecta");
-            System.out.println("Necesita autenticación");
-        }
+        /*
+         * if (isAuthenticate) {
+         * System.out.println("Bienvenido usuario ".concat(u).concat("!"));
+         * } else {
+         * System.out.println("Username o contraseña incorrecta");
+         * System.out.println("Necesita autenticación");
+         * }
+         */
+
+        // Usando ternario
+        String mensaje = isAuthenticate ? "Bienvenido usuario ".concat(u).concat("!")
+                : "Username o contraseña incorrecta \n Lo sentimos, necesita autenticación";
+        System.out.println("mensaje = " + mensaje);
     }
 }
