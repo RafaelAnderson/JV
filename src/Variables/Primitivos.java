@@ -38,7 +38,5 @@ public class Primitivos {
         System.out.println("tipo long corresponde en bites a " + Long.SIZE);
         System.out.println("Valor máximo de un long: " + Long.MAX_VALUE);
         System.out.println("Valor mínimo de un long: " + Long.MIN_VALUE);
-
-        var numero = 127;
     }
 }
