@@ -18,11 +18,12 @@ public class EjemploStringTestRendimientoConcat {
             sb.append(a).append(b).append("\n"); // 500 => 0ms
         }
 
-        long fin = System.currentTimeMillis();
+        System.gc(); // Garbage Collector, acelera el proceso para limpiar las instancias
 
+        long fin = System.currentTimeMillis();
         System.out.println(fin - inicio);
         System.out.println("c = " + c);
         System.out.println("sb = " + sb.toString());
-
+        System.exit(0);
     }
 }
