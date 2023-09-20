@@ -17,8 +17,8 @@ public class EjemploArreglosParesImpares {
             a[i] = s.nextInt();
         }
 
-        for (int i = 0; i < a.length; i++) {
-            if (a[i] % 2 == 0) {
+        for (int value : a) {
+            if (value % 2 == 0) {
                 totalPares++;
             } else {
                 totalImpares++;
@@ -30,11 +30,11 @@ public class EjemploArreglosParesImpares {
         int j = 0;
         int k = 0;
 
-        for (int i = 0; i < a.length; i++) {
-            if (a[i] % 2 == 0) {
-                pares[j++] = a[i];
+        for (int value : a) {
+            if (value % 2 == 0) {
+                pares[j++] = value;
             } else {
-                impares[k++] = a[i];
+                impares[k++] = value;
             }
         }
 
